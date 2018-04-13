@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         return .lightContent
     }
     @IBAction func numbers(_ sender: UIButton) {
-        //因為我有在button上的tag設數字，我的數字是重1開始所以帶到tag時要-1才會是你按到的數字
+        //因為我有在button上的tag設數字，我的數字是重1開始所以帶到tag時要-1才會是你按到的數字(例：我設的0tag是1，所以要-1才會帶到0)
         let number = sender.tag - 1
         if myText.text != nil {
             if startNew == true {
