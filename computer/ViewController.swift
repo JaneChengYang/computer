@@ -82,17 +82,13 @@ class ViewController: UIViewController {
         if performingMath == true{
             switch operation {
             case .add:
-                previousNumber = previousNumber + numberOnScreen
-                myText.text = "\(previousNumber)"
+                myText.text  = "\(previousNumber + numberOnScreen)"
             case .subtract:
-                previousNumber = previousNumber - numberOnScreen
-                myText.text = "\(previousNumber)"
+                myText.text  = "\(previousNumber - numberOnScreen)"
             case .multiply:
-                previousNumber = previousNumber * numberOnScreen
-                myText.text = "\(previousNumber)"
+                myText.text  = "\(previousNumber * numberOnScreen)"
             case .divide:
-                previousNumber = previousNumber / numberOnScreen
-                myText.text = "\(previousNumber)"
+                myText.text  = "\(previousNumber / numberOnScreen)"
             case .none:
                 myText.text = "0"
             }
